@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Guirlande.Lumineuse"
+             x:Class="Guirlande.Lumineuse.MainPage" Title="Configuration">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell Label="Positon" Placeholder="position de l'appareil" x:Name="positionEntry"  Keyboard="Numeric" />
+                        <EntryCell Label="Url" Placeholder="Url du serveur" x:Name="urlEntry"/>
+                        <EntryCell Label="Port" Placeholder="Port du serveur" x:Name="portEntry"  Keyboard="Numeric" />
+                    </TableSection>
+                </TableRoot>
+
+            </TableView>
+            
+            <Button Text="Commencer" Clicked="BeginLighCclik"></Button>
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>
